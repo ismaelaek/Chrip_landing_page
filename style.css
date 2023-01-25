@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+p{
+    color: rgb(87, 87, 87);
+    font-size: 15pt;
+}
+nav{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.logo{
+    color: #1DA1F2;
+}
+.menu ul{
+    display: flex;
+    gap: 15px;
+}
+.menu ul li a {
+    color: rgb(56, 56, 56);
+}
+.menu{
+    display: flex;
+    gap: 15px;
+}
+.sign{
+    height: 40px;
+    padding: 10px 15px;
+    margin-top: 5px;
+    display: flex;
+    gap: 8px;
+    line-height: 22px;
+    color: #fff;
+    background-color: #1DA1F2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+main{
+    padding: 0 10%;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.para{
+    width: 65%;
+}
+.para h1{
+    font-size: 45pt;
+}
+.para p{
+    font-size: 16pt;
+    opacity: 0.7;
+}
+.para p b{
+    color: #1DA1F2;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btn a{
+    color: #1DA1F2;
+}
+.users img{
+    margin-top: 20px;
+    margin-left: -22px;
+    width: 35px;
+}
+.users img:first-child{
+    margin-left: 0;
+}
+#join{
+    margin-top: 20px;
+}
+.hero{
+    width: 35%;
+}
+.hero img{
+    width: 100%;
+}
+article{
+    padding: 0 10%;
+    margin-top: 40px;
+}
+.container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+}
+.feature{
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.feature p{
+    margin-top: 10px;
+    opacity: 0.7;
+}
+.feedback{
+    background-color: #D7F5F5;
+    padding: 40px 10%;
+    margin-top: 40px;
+}
+.opinions{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin:10px 0;
+}
+.tweet{
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    height: fit-content;
+    border-radius: 5px;
+}
+.tweet_head{
+    display: flex;
+    justify-content: space-between;
+}
+.tweet > p{
+    margin: 20px 0;
+
+}
+.tweet_footer{
+    display: flex;
+    justify-content: space-between;
+}
+.likes{
+    display: flex;
+    gap: 5px;
+}
+.likes i{
+    color: red;
+    margin-top: 4px;
+}
+th:first-child{
+    padding: 0 5px;
+}
+td{
+    opacity: 0.7;
+}
+.feedback h1{
+    margin: 20px 0;
+}
+.pricing{
+    padding: 40px 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.plan{
+    width: 40%;
+}
+.monthly{
+    margin-top: 40px;
+    padding: 20px 40px;
+    text-align: left;
+    background-color: #FBF8F3;
+    border-radius: 10px;
+    border: solid 1px #FFDFAB;
+}
+.price{
+    display: flex;
+    align-items: flex-end;
+}
+.monthly hr{
+    margin: 20px 0 ;
+    opacity: 0.5;
+}
+.feat{
+    display: flex;
+    gap: 10px;
+    padding: 10px 0 ;
+}
+.feat i{
+    color: #2ED8AF;
+}
+.feat p{
+    font-size: 13pt;
+}
+.monthly button{
+    width: 100%;
+    justify-content: center;
+}
+footer{
+    background-color: #D7F5F5;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.terms{
+    display: flex;
+    gap: 20px;
+}
+.terms a{
+    color: black;
+}
+.terms a:first-child{
+    margin-top: 5px;
+}
+#check,label{
+    display: none;
+}
+#tab{
+    display: none;
+}
+@media (max-width:768px) {
+    nav,main,article{
+        padding: 0 20px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 20px;
+        text-align: center;
+    }
+    main{
+        display: grid;
+    }
+    #tab{
+        display: block;
+    }
+    .hero{
+        grid-row: 1/2;
+        width: 100%;
+    }
+    .hero img:first-child{
+        display: none;
+    }
+    .para{
+        width: fit-content;
+    }
+    .para h1{
+        font-size: 30pt;
+    }
+    .opinions{
+        display: block;
+    }
+    .tweet{
+        width: fit-content;
+        margin-top: 20px;
+    }
+    article,.feedback{
+        margin: 40px 0;
+    }
+    .feedback{
+        padding: 20px 20px;
+    }
+    .pricing{
+        display: block;
+        width: fit-content;
+    }
+    .plan{
+        width: fit-content;
+    }
+
+}
+@media (max-width:480px) {
+    nav{
+        overflow-x: hidden;
+        margin: 0;
+        position: sticky;
+        top: 0px;
+        background-color: #fff;
+        opacity: 1;
+    }
+    .menu button{
+        display: none;
+    }
+    .menu label{
+        display: block;
+    }
+    .menu ul{
+        position: fixed;
+        right: -100%;
+        top: 60px;
+        width: 100%;
+        background-color: #1DA1F2;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+        transition: ease-in-out 0.5s;
+        text-align: center;
+    }
+    .menu ul li{
+        border-bottom: white 1px solid;
+    }
+    .menu ul li a{
+        color: white;
+        font-weight: bold;
+    }
+    #check:checked ~ ul{
+        right: 0;
+    }
+    #tab{
+        display: none;
+    }
+    .hero img:first-child{
+        display: block;
+    }
+
+    .btn,.container{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 20px;
+        text-align: center;
+    }
+    .btn button{
+        display: flex;
+        justify-content: center;
+    }
+    .hero{
+        width: fit-content;
+        grid-row: 1/2;
+    }
+}
